@@ -1,0 +1,42 @@
+mainData
+Codebook
+
+id: id number
+city: the city where the apartment located
+neighborhood_id: random id generated for the census tract (or metropolitan area)
+rent: the rent reported on the Craigslist posting
+rent2: the rent squared
+ave_ngbrhd_rent: average of rents in the neighborhood
+one_bed: dummy variable for whether apartment is 1-bedroom (remaining are studios)
+sex: gender of the applicant sent by researcher
+race: race of the applicant sent by the researcher
+first_name: first name of the applicant sent by the researcher
+last_name: last name of the applicant sent by the researcher
+first_meduc: mean education of the mother approximated by the first name
+first_name_freq1990: frequency of the first name in the 1990 census
+muslim: is the first name Muslim-sounding?
+rarename: dummy variable for whether the first name is rare
+info_nil: is the treatment of the email "No information"
+info_pos: is the treatment of the email "Positive information"
+info_neg: is the treatment of the email "Negative information"
+weekend: was the email sent on the weekend?
+pctmales: the fraction of men in the neighborhood
+pctblack: the fraction of the neighborhood that is black [see Census data description below]
+pctblack_city: the fraction of the city that is black
+responded: dummy variable for whether the landlord responded to the email
+pos_resp: dummy variable for whether the response was positive
+pos_resp1: dummy variable for whether the response was "available" or an ambivalent yes
+pos_resp2: dummy variable for whether the response was "available" or an ambivalent yes or "if yes"
+pos_resp3: dummy variable for whether the response was "available" or an ambivalent yes or "if yes" or need more info
+rel_rent: The ratio of the rent to the average rent of the neighborhood
+rel_rent2: The ratio above of the rent above but squared
+male: a dummy variable for whether the applicant sent by the researcher is male
+female: a dummy variable for whether the applicant sent by the researcher is female
+white: a dummy variable for whether the applicant sent by the researcher is white
+black: a dummy variable for whether the applicant sent by the researcher is black
+blackXpct: the interaction of the black dummy and the fraction of the neighborhood that is black
+blackXinfo_pos: the interaction of the black dummy and the dummy for positive information in the email
+blackXinfo_neg: the interaction of the black dummy and the dummy for negative information in the email
+blackXpctXinfo_pos: the interaction between the black dummy the percent black in the neighborhood and the dummy for positive information in the email
+blackXpctXinfo_neg: the interaction between the black dummy the percent black in the neighborhood and the dummy for negative information in the email
+treatment_id: 
