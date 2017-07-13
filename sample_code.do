@@ -14,7 +14,7 @@ clear all
 set more off
 
 * Set Directory (change to your folder)
-cd "C:\Users\krb-user45\Desktop\Temp"
+cd "~/Dropbox/Programming/Stata_Workshop/Stata_R_Workshop"
 
 *************************
 * Setup
@@ -109,7 +109,11 @@ reg pos_resp info_pos info_neg
 reg pos_resp black info_pos info_neg blackxinfo_pos blackxinfo_neg
 
 *** The partial effect of a black sounding name and giving negative information versus
-*** not having a black sounding name and giving negative information is lower! (-33.7% + 4.5% = -32%)
+*** not having a black sounding name and giving negative information is lower!
+*** For white sounding names, the partial effect is -33.7%.
+*** For black sounding names, the partial effect is -33.7% + 4.5% = -29.2%
+*** however the total effect is -33.7% + 4.5% - 9% lower.
 *** The information is weighted more heavily for those without black sounding names
 *** which may be evidence for statistical discrimination in the housing market.
-
+*** If there is no statistical discrimination, then information should have the same impact
+*** for black and white sounding names (coefficients on blackXinfo_pos and blackXinfo_neg should be zero). 
